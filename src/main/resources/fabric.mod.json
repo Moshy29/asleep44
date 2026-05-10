@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "asleep44",
+	"version": "${version}",
+	"name": "asleep44",
+	"description": "I've created a mod that adds purposeless utilities, please enjoy.",
+	"authors": [
+		"Asleep44"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/asleep44/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"name.asleep.Asleep44"
+		],
+		"client": [
+			"name.asleep.client.Asleep44Client"
+		]
+	},
+	"mixins": [
+		"asleep44.mixins.json",
+		{
+			"config": "asleep44.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}

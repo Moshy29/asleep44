@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "asleep44:item/london_vincent"
+  }
+}
